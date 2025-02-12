@@ -9,5 +9,5 @@ public class UsuarioContext : DbContext
     {
     }
 
-    public DbSet<Usuarios> Usuarios { get; set; } = null!;
+    public DbSet<Usuario> Usuario { get; set; } = null!;
 }
