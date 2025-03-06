@@ -80,11 +80,7 @@ public class UsuarioController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutTodoItem(long id, UsuarioPutDTO usuarioDTO)
     {
-        if (id != usuarioDTO.Id)
-        {
-            return BadRequest();
-        }
-
+        
         var usuario = await _context.Usuario.FindAsync(id);
         if (usuario == null)
         {
