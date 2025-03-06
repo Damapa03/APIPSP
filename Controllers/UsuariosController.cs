@@ -65,6 +65,7 @@ public class UsuarioController : ControllerBase
         {
             UsuarioDataDTO usuarioDataDTO = new()
             {
+                Id = id,
                 Username = usuario.Username,
                 Score = usuario.Score
             };
@@ -77,7 +78,7 @@ public class UsuarioController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutTodoItem(long id, UsuarioDTO usuarioDTO)
+    public async Task<IActionResult> PutTodoItem(long id, UsuarioPutDTO usuarioDTO)
     {
         if (id != usuarioDTO.Id)
         {
