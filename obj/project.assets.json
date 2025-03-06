@@ -8147,24 +8147,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\damap\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Kkdvakk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damap\\Mi unidad (dmarpac979@g.educaand.es)\\PSP\\2ºTrimestre\\TodoApi\\TodoApi.csproj",
+      "projectUniqueName": "H:\\Mi unidad\\PSP\\2ºTrimestre\\TodoApi\\TodoApi.csproj",
       "projectName": "TodoApi",
-      "projectPath": "C:\\Users\\damap\\Mi unidad (dmarpac979@g.educaand.es)\\PSP\\2ºTrimestre\\TodoApi\\TodoApi.csproj",
-      "packagesPath": "C:\\Users\\damap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\damap\\Mi unidad (dmarpac979@g.educaand.es)\\PSP\\2ºTrimestre\\TodoApi\\obj\\",
+      "projectPath": "H:\\Mi unidad\\PSP\\2ºTrimestre\\TodoApi\\TodoApi.csproj",
+      "packagesPath": "C:\\Users\\Kkdvakk\\.nuget\\packages\\",
+      "outputPath": "H:\\Mi unidad\\PSP\\2ºTrimestre\\TodoApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\damap\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\Kkdvakk\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -8241,7 +8236,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
