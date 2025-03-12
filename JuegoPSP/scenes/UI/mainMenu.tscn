@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://dij63npiid3ar"]
+
+[ext_resource type="Script" uid="uid://vj1evtxcdyvg" path="res://scripts/UI/LoginButton.cs" id="1_a2qe5"]
+[ext_resource type="Script" uid="uid://pglyrph121ss" path="res://scripts/UI/RegisterButton.cs" id="2_gkd3i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cogrb"]
+font_size = 41
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoginButton" type="Button" parent="." node_paths=PackedStringArray("username", "password")]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 408.0
+offset_right = 448.0
+offset_bottom = 480.0
+text = "Login"
+script = ExtResource("1_a2qe5")
+username = NodePath("../Username")
+password = NodePath("../Password")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 96.0
+offset_right = 771.0
+offset_bottom = 192.0
+text = "The wrath of the snails"
+label_settings = SubResource("LabelSettings_cogrb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RegisterButton" type="Button" parent="." node_paths=PackedStringArray("username", "password")]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 408.0
+offset_right = 864.0
+offset_bottom = 480.0
+text = "Register"
+script = ExtResource("2_gkd3i")
+username = NodePath("../Username")
+password = NodePath("../Password")
+
+[node name="Username" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 240.0
+offset_right = 768.0
+offset_bottom = 280.0
+placeholder_text = "Username"
+
+[node name="Password" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 296.0
+offset_right = 768.0
+offset_bottom = 336.0
+placeholder_text = "Password"
+
+[node name="Form" type="Node" parent="."]
+
+[connection signal="pressed" from="LoginButton" to="LoginButton" method="_on_pressed"]
+[connection signal="pressed" from="RegisterButton" to="RegisterButton" method="_on_pressed"]

@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn3rjsl0njlwv"]
+
+[ext_resource type="Script" uid="uid://w82t5psy05aj" path="res://scripts/UI/PlayAgain.cs" id="1_baiks"]
+[ext_resource type="Script" uid="uid://cpxfk3h3qvupi" path="res://scripts/UI/Exit.cs" id="2_oh8fj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2yp33"]
+font_size = 46
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 461.0
+offset_right = 461.0
+offset_bottom = 544.0
+text = "Play again?"
+script = ExtResource("1_baiks")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 645.0
+offset_top = 459.0
+offset_right = 936.0
+offset_bottom = 542.0
+text = "Exit"
+script = ExtResource("2_oh8fj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 137.0
+offset_right = 764.0
+offset_bottom = 239.0
+text = "YOU WIN!"
+label_settings = SubResource("LabelSettings_2yp33")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
